@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+/* LAYOUT */
+body,html{
+margin:0;
+padding: 0;
+overflow:hidden;
+}
+main {
+overflow-x: hidden;
+height: 100%; /*or overflow-x:scroll */
+display: flex;
+}  
+section {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 4ch;
+}
+#end-section{
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+}
+/* TEXT */
+h1 {
+margin: 0;
+}
+.myName.span {
+    font-family: 'Bonheur Royale', cursive;
+}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-family: serif;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+/* UUNDERLINE */
+strong {
+  position: relative;
+}
+strong::after {
+  content: "";
+  position: absolute;
+  bottom: -0.125rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 0.75rem;
+  z-index: -1;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p > strong {
+  font-weight: 400;
+}
+p > strong::after {
+  bottom: -0.2rem;
+  height: 0.5rem;
+  left: -0.25rem;
+  right: -0.25rem;
+}
+
+/* BACKGOUND  */
+.BG-1 {
+    /*Cool marine gradient: Grey, blue, violet, grey again */
+    background: linear-gradient( -45deg, #e8e8e8, #d0d0d0, #dedede, #e0e0e0, #ffffff, #ffffff );
+    background-size: 400% 400%;
+    animation: backgroundChange0 15s ease infinite;
+  }
+  
+  @keyframes backgroundChange0 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
