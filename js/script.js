@@ -1,6 +1,3 @@
-const scrollContainer = document.querySelector('main');
-
-scrollContainer.addEventListener('wheel', (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-});
+ScrollReveal().reveal('.sec');
+ScrollReveal().reveal('.title', { delay: 500 });
+ScrollReveal().reveal('.subtitle', { delay: 2000 });
