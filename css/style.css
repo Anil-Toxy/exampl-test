@@ -31,7 +31,7 @@ margin: 0;
   position: relative;
   display: inline-block;
   font-family: serif;
-  font-size: 30px;
+  font-size: 0.8em;
   color: #fff;
   text-transform: uppercase;
   animation: flip 2s infinite;
