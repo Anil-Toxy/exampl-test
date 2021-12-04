@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Staatliches&display=swap');
 /* LAYOUT */
 body,html{
 margin:0;
@@ -21,21 +21,60 @@ font-size: 4ch;
 h1 {
 margin: 0;
 }
-.myName.span {
-    font-family: 'Bonheur Royale', cursive;
+.title {
+  font-family: 'Bonheur Royale', cursive;
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+}
+span.front {
+  font-family: 'Lato';
+  font-size: 0.7em;
+  text-shadow: 1px 1px 1px #010101b3;
 }
 .waviy {
   position: relative;
+  display: inline;
 }
 .waviy span {
   position: relative;
   display: inline-block;
-  font-family: serif;
-  font-size: 0.8em;
-  color: #fff;
+  font-family: 'Lato';
+  color:white;
+  font-size: 0.7em;  
+  text-shadow: 1px 1px 1px #0000002e;
+  margin-right: -5px;
   text-transform: uppercase;
   animation: flip 2s infinite;
   animation-delay: calc(.2s * var(--i))
+}
+.about{
+  font-size: 1em;
+  color: #343e67;
+  text-shadow: 1px 1px 1px #0000001a;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-family: serif;
+  margin-top: 2em;
+  text-align: center;
+}
+.bio-head{
+  font-family: 'Bonheur Royale';
+  font-size: 3.3em;
+}
+.anil {
+  color: #000000;
+  background: linear-gradient(to left, #ff936a 16%, #db36a4);
+  padding: 0 5px;
+  border: 1px solid white;
+  font-family: monospace;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+.bio-text {
+  font-family: ui-monospace;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #00000021;
 }
 @keyframes flip {
   0%,80% {
@@ -53,7 +92,6 @@ strong::after {
   left: -0.5rem;
   right: -0.5rem;
   height: 0.75rem;
-  z-index: -1;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,11 +108,16 @@ p > strong::after {
 }
 
 /* BACKGOUND  */
+.ui.segment{
+  background: #ffffff6e !important;
+}
 .BG-1 {
     /*Cool marine gradient: Grey, blue, violet, grey again */
-    background: linear-gradient( -45deg, #e8e8e8, #d0d0d0, #dedede, #e0e0e0, #ffffff, #ffffff );
-    background-size: 400% 400%;
-    animation: backgroundChange0 15s ease infinite;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    /* animation: backgroundChange0 15s ease infinite; */
+  }
+  .BG-2{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   }
   
   @keyframes backgroundChange0 {
