@@ -49,18 +49,16 @@ span.front {
   animation-delay: calc(.2s * var(--i))
 }
 .about{
-  font-size: 1em;
-  color: #343e67;
+  font-size: 0.5em;
+  color: #030019;
   text-shadow: 1px 1px 1px #0000001a;
   letter-spacing: 1px;
   word-spacing: 3px;
   font-family: serif;
-  margin-top: 2em;
-  text-align: center;
 }
 .bio-head{
-  font-family: 'Bonheur Royale';
-  font-size: 3.3em;
+  font-family: sans-serif;
+  font-size: 1.3em;
 }
 .anil {
   color: #000000;
@@ -74,7 +72,7 @@ span.front {
 .bio-text {
   font-family: ui-monospace;
   font-weight: 400;
-  text-shadow: 1px 1px 1px #00000021;
+  text-shadow: 1px 1px 1px #233dbc57;
 }
 @keyframes flip {
   0%,80% {
